@@ -7,7 +7,7 @@ let specifier = document.querySelector('.specifier');
 // GET DATE AND TIME 
 function getTime() {
     let date = new Date();
-    let hour = date.getHours() - 1;
+    let hour = date.getHours();
     let minute = date.getMinutes();
     let second = date.getSeconds();
 
