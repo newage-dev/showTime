@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.6rem;
+    background-color: rgb(9, 5, 29);
+    overflow: hidden !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.parent {
+    width: 100%;
+    color: #fff;
+    min-width: 300px;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.parent > h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1.3em;
+    letter-spacing: .15em;
+}
+
+#grids_block {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#grids_block > .time_blocks {
+    min-width: 85.33px;
+    border-radius: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgba(13, 104, 116, 0.836);
+}
+
+#grids_block > .time_blocks:nth-child(3) {
+    background-color: rgba(226, 41, 78, 0.856);
+}
+
+#grids_block .time_blocks > h2 {
+    font-size: 2.7rem;
+    padding: .5em 1em;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+#grids_block .time_blocks > h5 {
+    font-size: .7em;
+    padding: .4em;
+    background-color: rgba(0, 0, 0, 0.144);
+    color: rgba(255, 255, 255, 0.623);
+}
+
+#grids_block > .pm_block {
+    padding: .1em .7em;
+    border-radius: 2px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.63);
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 300px) and (max-width: 339px) {
+    section.parent > h1 {
+        margin-left: -50px;
+        margin-bottom: .8em;
+    }
+
+    #grids_block {
+        flex-direction: row;
+    }
+    
+    #grids_block > .time_blocks {
+        margin-bottom: 0;
+        margin-right: 10px;
+        min-width: 70px;
+    }
+
+    #grids_block .time_blocks > h2 {
+        padding: .4em .6em;
+    }
+
+    #grids_block > .pm_block {
+        align-self: flex-end;
+    }
+}
+
+
+
+@media (min-width: 340px) {
+    section.parent > h1 {
+        margin-left: -50px;
+        margin-bottom: .8em;
+    }
+
+    #grids_block {
+        flex-direction: row;
+    }
+
+    #grids_block > .time_blocks {
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
+
+    #grids_block .time_blocks > h2 {
+        padding: .6em 1em;
+    }
+
+    #grids_block > .pm_block {
+        align-self: flex-end;
+    }
+}
